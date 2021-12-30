@@ -30,7 +30,7 @@ class RecyclerViewAdapter (var notes:List<Notes>,val mainActivity: MainActivity)
             updateBu.setOnClickListener{
 
                 mainActivity.dilog("update",note.note,note.pk)
-                 cardView.isVisible = false
+//                 cardView.isVisible = false
 
             }
 

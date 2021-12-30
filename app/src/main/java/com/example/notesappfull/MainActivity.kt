@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateNote(notePk: Int,noteText: String) {
         databaseHelper.updateData(Notes(notePk,noteText))
-        rvAdapter.notifyDataSetChanged()
+        getData()
     }
     private fun deleteNote (notePk: Int){
         databaseHelper.deleteData(Notes(notePk,""))
